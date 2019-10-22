@@ -12,6 +12,8 @@ npm install -g typescript ts-node
 
 ## Run your code
 
+You have a couple of different options to run the code:
+
 1. Use typescript compiler, then node to run the code
 
 ```
