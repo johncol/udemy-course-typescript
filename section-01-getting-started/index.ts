@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-const url: string = 'https://jsonplaceholder.typicode.com/todos/1';
-
 interface ToDo {
   id: number;
   title: string;
@@ -16,6 +14,8 @@ const logTodo = (todo: ToDo) => {
     Is it finished? ${completed}
   `);
 };
+
+const url: string = 'https://jsonplaceholder.typicode.com/todos/1';
 
 axios.get(url).then(response => {
   const todo: ToDo = response.data;
